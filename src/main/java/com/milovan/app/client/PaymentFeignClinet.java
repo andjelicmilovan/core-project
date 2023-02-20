@@ -17,6 +17,6 @@ public interface PaymentFeignClinet {
     @PostMapping("/api/payment/start-transaction")
     void getAllPosts(@RequestBody TransactionRequestDto transactionRequestDto);
 
-    @PostMapping("/api/payment/v2/start-transaction")
+    @PostMapping("/api/transaction/start")
     Transaction1Dto getPaymentIntent(@RequestBody TransactionRequestDto transactionRequestDto);
 }
